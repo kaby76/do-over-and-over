@@ -1,0 +1,1672 @@
+++ pwd
++ reset=/home/Kenne/issues/antlr-4345-again
++ rm -rf antlr4
++ git clone https://github.com/opencastsoftware/antlr4.git
+Cloning into 'antlr4'...
+Updating files:   5% (126/2268)Updating files:   6% (137/2268)Updating files:   7% (159/2268)Updating files:   8% (182/2268)Updating files:   9% (205/2268)Updating files:  10% (227/2268)Updating files:  11% (250/2268)Updating files:  12% (273/2268)Updating files:  13% (295/2268)Updating files:  14% (318/2268)Updating files:  14% (338/2268)Updating files:  15% (341/2268)Updating files:  16% (363/2268)Updating files:  17% (386/2268)Updating files:  18% (409/2268)Updating files:  19% (431/2268)Updating files:  20% (454/2268)Updating files:  21% (477/2268)Updating files:  22% (499/2268)Updating files:  23% (522/2268)Updating files:  24% (545/2268)Updating files:  25% (567/2268)Updating files:  26% (590/2268)Updating files:  27% (613/2268)Updating files:  28% (636/2268)Updating files:  28% (652/2268)Updating files:  29% (658/2268)Updating files:  30% (681/2268)Updating files:  31% (704/2268)Updating files:  32% (726/2268)Updating files:  33% (749/2268)Updating files:  33% (754/2268)Updating files:  34% (772/2268)Updating files:  35% (794/2268)Updating files:  36% (817/2268)Updating files:  37% (840/2268)Updating files:  38% (862/2268)Updating files:  39% (885/2268)Updating files:  40% (908/2268)Updating files:  41% (930/2268)Updating files:  42% (953/2268)Updating files:  42% (966/2268)Updating files:  43% (976/2268)Updating files:  44% (998/2268)Updating files:  45% (1021/2268)Updating files:  46% (1044/2268)Updating files:  47% (1066/2268)Updating files:  47% (1075/2268)Updating files:  48% (1089/2268)Updating files:  49% (1112/2268)Updating files:  50% (1134/2268)Updating files:  51% (1157/2268)Updating files:  52% (1180/2268)Updating files:  52% (1189/2268)Updating files:  53% (1203/2268)Updating files:  54% (1225/2268)Updating files:  55% (1248/2268)Updating files:  56% (1271/2268)Updating files:  56% (1292/2268)Updating files:  57% (1293/2268)Updating files:  58% (1316/2268)Updating files:  59% (1339/2268)Updating files:  60% (1361/2268)Updating files:  61% (1384/2268)Updating files:  61% (1399/2268)Updating files:  62% (1407/2268)Updating files:  63% (1429/2268)Updating files:  64% (1452/2268)Updating files:  65% (1475/2268)Updating files:  66% (1497/2268)Updating files:  66% (1514/2268)Updating files:  67% (1520/2268)Updating files:  68% (1543/2268)Updating files:  69% (1565/2268)Updating files:  70% (1588/2268)Updating files:  70% (1609/2268)Updating files:  71% (1611/2268)Updating files:  72% (1633/2268)Updating files:  73% (1656/2268)Updating files:  74% (1679/2268)Updating files:  75% (1701/2268)Updating files:  75% (1720/2268)Updating files:  76% (1724/2268)Updating files:  77% (1747/2268)Updating files:  78% (1770/2268)Updating files:  79% (1792/2268)Updating files:  80% (1815/2268)Updating files:  80% (1822/2268)Updating files:  81% (1838/2268)Updating files:  82% (1860/2268)Updating files:  83% (1883/2268)Updating files:  84% (1906/2268)Updating files:  85% (1928/2268)Updating files:  85% (1932/2268)Updating files:  86% (1951/2268)Updating files:  87% (1974/2268)Updating files:  88% (1996/2268)Updating files:  89% (2019/2268)Updating files:  89% (2038/2268)Updating files:  90% (2042/2268)Updating files:  91% (2064/2268)Updating files:  92% (2087/2268)Updating files:  93% (2110/2268)Updating files:  94% (2132/2268)Updating files:  95% (2155/2268)Updating files:  95% (2171/2268)Updating files:  96% (2178/2268)Updating files:  97% (2200/2268)Updating files:  98% (2223/2268)Updating files:  99% (2246/2268)Updating files: 100% (2268/2268)Updating files: 100% (2268/2268), done.
++ cd antlr4
++ git checkout 84866cc
+Note: switching to '84866cc'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 84866cc05 Lookup action templates from inputDirectory, grammar file directory and libDirectory in addition to absolute path
++ git status .
+HEAD detached at 84866cc05
+nothing to commit, working tree clean
++ git rev-parse --short HEAD
+84866cc05
++ git rev-parse HEAD
+84866cc05d3eb65108f581305389ec22c8d5199b
++ export MAVEN_OPTS=-Xmx1G
++ MAVEN_OPTS=-Xmx1G
++ mvn clean
+[INFO] Scanning for projects...
+[WARNING] The project org.antlr:antlr4-master:pom:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-tool-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ANTLR 4                                                            [pom]
+[INFO] ANTLR 4 Runtime                                                    [jar]
+[INFO] ANTLR 4 Tool                                                       [jar]
+[INFO] ANTLR 4 Maven plugin                                      [maven-plugin]
+[INFO] ANTLR 4 Runtime Tests (4th generation)                             [jar]
+[INFO] ANTLR 4 Tool Tests                                                 [jar]
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-master >-----------------------
+[INFO] Building ANTLR 4 4.13.1-SNAPSHOT                                   [1/6]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-master ---
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-runtime >----------------------
+[INFO] Building ANTLR 4 Runtime 4.13.1-SNAPSHOT                           [2/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-runtime ---
+[INFO] 
+[INFO] --------------------------< org.antlr:antlr4 >--------------------------
+[INFO] Building ANTLR 4 Tool 4.13.1-SNAPSHOT                              [3/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4 ---
+[INFO] 
+[INFO] -------------------< org.antlr:antlr4-maven-plugin >--------------------
+[INFO] Building ANTLR 4 Maven plugin 4.13.1-SNAPSHOT                      [4/6]
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-maven-plugin ---
+[INFO] 
+[INFO] -----------------< org.antlr:antlr4-runtime-testsuite >-----------------
+[INFO] Building ANTLR 4 Runtime Tests (4th generation) 4.13.1-SNAPSHOT    [5/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-runtime-testsuite ---
+[INFO] 
+[INFO] ------------------< org.antlr:antlr4-tool-testsuite >-------------------
+[INFO] Building ANTLR 4 Tool Tests 4.13.1-SNAPSHOT                        [6/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-tool-testsuite ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for ANTLR 4 4.13.1-SNAPSHOT:
+[INFO] 
+[INFO] ANTLR 4 ............................................ SUCCESS [  0.168 s]
+[INFO] ANTLR 4 Runtime .................................... SUCCESS [  0.068 s]
+[INFO] ANTLR 4 Tool ....................................... SUCCESS [  0.011 s]
+[INFO] ANTLR 4 Maven plugin ............................... SUCCESS [  0.045 s]
+[INFO] ANTLR 4 Runtime Tests (4th generation) ............. SUCCESS [  0.122 s]
+[INFO] ANTLR 4 Tool Tests ................................. SUCCESS [  0.003 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.191 s
+[INFO] Finished at: 2023-08-30T13:14:16-04:00
+[INFO] ------------------------------------------------------------------------
++ mvn -DskipTests install
+[INFO] Scanning for projects...
+[WARNING] The project org.antlr:antlr4-master:pom:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-tool-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ANTLR 4                                                            [pom]
+[INFO] ANTLR 4 Runtime                                                    [jar]
+[INFO] ANTLR 4 Tool                                                       [jar]
+[INFO] ANTLR 4 Maven plugin                                      [maven-plugin]
+[INFO] ANTLR 4 Runtime Tests (4th generation)                             [jar]
+[INFO] ANTLR 4 Tool Tests                                                 [jar]
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-master >-----------------------
+[INFO] Building ANTLR 4 4.13.1-SNAPSHOT                                   [1/6]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-master ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-master ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-master\4.13.1-SNAPSHOT\antlr4-master-4.13.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-runtime >----------------------
+[INFO] Building ANTLR 4 Runtime 4.13.1-SNAPSHOT                           [2/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-runtime ---
+[INFO] 
+[INFO] --- graphviz-maven-plugin:1.0:dot (default) @ antlr4-runtime ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-runtime ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 174 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime/Java/src/org/antlr/v4/runtime/tree/pattern/ParseTreePatternMatcher.java: Some input files use or override a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime/Java/src/org/antlr/v4/runtime/tree/pattern/ParseTreePatternMatcher.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:5.1.7:manifest (bundle-manifest) @ antlr4-runtime ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\classes\META-INF\MANIFEST.MF
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\test
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-runtime ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ antlr4-runtime ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ antlr4-runtime ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (default) > generate-sources @ antlr4-runtime >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-runtime ---
+[INFO] 
+[INFO] --- graphviz-maven-plugin:1.0:dot (default) @ antlr4-runtime ---
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (default) < generate-sources @ antlr4-runtime <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (default) @ antlr4-runtime ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-runtime ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime\4.13.1-SNAPSHOT\antlr4-runtime-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime\4.13.1-SNAPSHOT\antlr4-runtime-4.13.1-SNAPSHOT.pom
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT-sources.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime\4.13.1-SNAPSHOT\antlr4-runtime-4.13.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --------------------------< org.antlr:antlr4 >--------------------------
+[INFO] Building ANTLR 4 Tool 4.13.1-SNAPSHOT                              [3/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (default) @ antlr4 ---
+[INFO] Source directory: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr4-tool-codegen added.
+[INFO] 
+[INFO] --- antlr3-maven-plugin:3.5.3:antlr (default) @ antlr4 ---
+[INFO] ANTLR: Processing source directory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src
+ANTLR Parser Generator  Version 3.5.3
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ANTLRLexer.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRLexer.g
+org\antlr\v4\parse\ANTLRLexer.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ANTLRParser.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRParser.g
+org\antlr\v4\parse\ANTLRParser.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\BlockSetTransformer.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\BlockSetTransformer.g
+org\antlr\v4\parse\BlockSetTransformer.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\GrammarTreeVisitor.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\GrammarTreeVisitor.g
+org\antlr\v4\parse\GrammarTreeVisitor.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ActionSplitter.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ActionSplitter.g
+org\antlr\v4\parse\ActionSplitter.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\LeftRecursiveRuleWalker.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\LeftRecursiveRuleWalker.g
+org\antlr\v4\parse\LeftRecursiveRuleWalker.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\codegen\SourceGenTriggers.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\codegen\SourceGenTriggers.g
+org\antlr\v4\codegen\SourceGenTriggers.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ATNBuilder.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ATNBuilder.g
+org\antlr\v4\parse\ATNBuilder.g
+[INFO] 
+[INFO] --- string-template-maven-plugin:1.1:render (default) @ antlr4 ---
+[INFO] Unable to find the class: org.antlr.v4.unicode.UnicodeDataTemplateController.  Attempting to compile it...
+[INFO] Compiling org\antlr\v4\unicode\UnicodeDataTemplateController.java...
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\classes
+[WARNING] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\unicode\UnicodeDataTemplateController.java uses or overrides a deprecated API.
+[WARNING] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: Recompile with -Xlint:deprecation for details.
+[INFO] Invoking controller method: org.antlr.v4.unicode.UnicodeDataTemplateController.getProperties()
+[INFO] Adding compile source root: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\tool
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (fix-antlr3-RB) @ antlr4 ---
+[INFO] Replacement run on 8 files.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 18 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 240 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\unicode\UnicodeDataTemplateController.java uses or overrides a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\test
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ antlr4 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ antlr4 ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (default) > generate-sources @ antlr4 >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (default) @ antlr4 ---
+[INFO] Source directory: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr4-tool-codegen added.
+[INFO] 
+[INFO] --- antlr3-maven-plugin:3.5.3:antlr (default) @ antlr4 ---
+[INFO] ANTLR: Processing source directory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src
+ANTLR Parser Generator  Version 3.5.3
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRLexer.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRParser.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\BlockSetTransformer.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\GrammarTreeVisitor.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ActionSplitter.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\LeftRecursiveRuleWalker.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\codegen\SourceGenTriggers.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ATNBuilder.g is up to date - build skipped
+[INFO] 
+[INFO] --- string-template-maven-plugin:1.1:render (default) @ antlr4 ---
+[INFO] Invoking controller method: org.antlr.v4.unicode.UnicodeDataTemplateController.getProperties()
+[INFO] Adding compile source root: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\tool
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (default) < generate-sources @ antlr4 <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (default) @ antlr4 ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:3.2.4:shade (default) @ antlr4 ---
+[INFO] Including org.antlr:antlr4-runtime:jar:4.13.1-SNAPSHOT in the shaded jar.
+[INFO] Including org.antlr:antlr-runtime:jar:3.5.3 in the shaded jar.
+[INFO] Including org.antlr:ST4:jar:4.3.4 in the shaded jar.
+[INFO] Including org.abego.treelayout:org.abego.treelayout.core:jar:1.0.3 in the shaded jar.
+[INFO] Excluding com.ibm.icu:icu4j:jar:72.1 from the shaded jar.
+[WARNING] ST4-4.3.4.jar, antlr-runtime-3.5.3.jar, antlr4-4.13.1-SNAPSHOT.jar, antlr4-runtime-4.13.1-SNAPSHOT.jar, org.abego.treelayout.core-1.0.3.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Attaching shaded artifact.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4 ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT.pom
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-sources.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT-sources.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT-complete.jar
+[INFO] 
+[INFO] -------------------< org.antlr:antlr4-maven-plugin >--------------------
+[INFO] Building ANTLR 4 Maven plugin 4.13.1-SNAPSHOT                      [4/6]
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-maven-plugin ---
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:helpmojo (help-goal) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] bsh mojo extractor found 0 mojo descriptor.
+[INFO] ant mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 0 mojo descriptor.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\classes
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:descriptor (default-descriptor) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] bsh mojo extractor found 0 mojo descriptor.
+[INFO] ant mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:descriptor (mojo-descriptor) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] bsh mojo extractor found 0 mojo descriptor.
+[INFO] ant mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\src\test\resources
+[INFO] 
+[INFO] --- takari-lifecycle-plugin:2.0.7:testProperties (testProperties) @ antlr4-maven-plugin ---
+[INFO] Previous incremental build state does not exist, performing full build
+[WARNING] File 'C:\Users\Kenne\.m2\settings.xml' does not exist! It will be ignored.
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\test-classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/antlr4-maven-plugin/src/test/java/org/antlr/mojo/antlr4/Antlr4MojoTest.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\src\test\java\org\antlr\mojo\antlr4\Antlr4MojoTest.java uses or overrides a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/antlr4-maven-plugin/src/test/java/org/antlr/mojo/antlr4/Antlr4MojoTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ antlr4-maven-plugin ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.2:jar (default-jar) @ antlr4-maven-plugin ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\antlr4-maven-plugin-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:addPluginArtifactMetadata (default-addPluginArtifactMetadata) @ antlr4-maven-plugin ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-maven-plugin ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\antlr4-maven-plugin-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-maven-plugin\4.13.1-SNAPSHOT\antlr4-maven-plugin-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-maven-plugin\4.13.1-SNAPSHOT\antlr4-maven-plugin-4.13.1-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.antlr:antlr4-runtime-testsuite >-----------------
+[INFO] Building ANTLR 4 Runtime Tests (4th generation) 4.13.1-SNAPSHOT    [5/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-runtime-testsuite ---
+[INFO] 
+[INFO] --- antlr4-maven-plugin:4.13.1-SNAPSHOT:antlr4 (default) @ antlr4-runtime-testsuite ---
+[INFO] ANTLR 4: Processing source directory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\test
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\Java.g4
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\VisitorCalc.g4
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\VisitorBasic.g4
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\perf\graphemes.g4
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-runtime-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 378 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-runtime-testsuite ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-runtime-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 67 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-runtime-testsuite ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 83 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\test-classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime-testsuite/test/org/antlr/v4/test/runtime/java/api/perf/TimeLexerSpeed.java: Some input files use or override a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime-testsuite/test/org/antlr/v4/test/runtime/java/api/perf/TimeLexerSpeed.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ antlr4-runtime-testsuite ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ antlr4-runtime-testsuite ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:test-jar (default) @ antlr4-runtime-testsuite ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-runtime-testsuite ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime-testsuite\4.13.1-SNAPSHOT\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime-testsuite\4.13.1-SNAPSHOT\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.pom
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT-tests.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime-testsuite\4.13.1-SNAPSHOT\antlr4-runtime-testsuite-4.13.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ------------------< org.antlr:antlr4-tool-testsuite >-------------------
+[INFO] Building ANTLR 4 Tool Tests 4.13.1-SNAPSHOT                        [6/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-tool-testsuite ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-tool-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-tool-testsuite ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-tool-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 57 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-tool-testsuite ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 53 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\target\test-classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/ToolTestUtils.java: Some input files use or override a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/ToolTestUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/TestUtils.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\test\org\antlr\v4\test\tool\TestUtils.java uses unchecked or unsafe operations.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/TestUtils.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ antlr4-tool-testsuite ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.2:jar (default-jar) @ antlr4-tool-testsuite ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\target\antlr4-tool-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-tool-testsuite ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\target\antlr4-tool-testsuite-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-tool-testsuite\4.13.1-SNAPSHOT\antlr4-tool-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-tool-testsuite\4.13.1-SNAPSHOT\antlr4-tool-testsuite-4.13.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for ANTLR 4 4.13.1-SNAPSHOT:
+[INFO] 
+[INFO] ANTLR 4 ............................................ SUCCESS [  0.450 s]
+[INFO] ANTLR 4 Runtime .................................... SUCCESS [ 13.434 s]
+[INFO] ANTLR 4 Tool ....................................... SUCCESS [ 10.611 s]
+[INFO] ANTLR 4 Maven plugin ............................... SUCCESS [  4.922 s]
+[INFO] ANTLR 4 Runtime Tests (4th generation) ............. SUCCESS [  6.025 s]
+[INFO] ANTLR 4 Tool Tests ................................. SUCCESS [  1.504 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  37.749 s
+[INFO] Finished at: 2023-08-30T13:14:56-04:00
+[INFO] ------------------------------------------------------------------------
+++ pwd
++ whereisit=/home/Kenne/issues/antlr-4345-again/antlr4/tool/target/antlr4-4.13.1-SNAPSHOT-complete.jar
+++ cygpath -w /home/Kenne/issues/antlr-4345-again/antlr4/tool/target/antlr4-4.13.1-SNAPSHOT-complete.jar
++ whereisit='C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar'
++ echo 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar'
+C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar
++ cd ..
++ rm -rf stg-python3
++ git clone https://github.com/kaby76/stg-python3
+Cloning into 'stg-python3'...
++ cd stg-python3
++ java --version
+openjdk 11.0.1 2018-10-16
+OpenJDK Runtime Environment 18.9 (build 11.0.1+13)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.1+13, mixed mode)
++ trgen --version
+trgen 0.21.2
+
++ trgen -t Java
+C:\msys64\home\Kenne\issues\antlr-4345-again\stg-python3
+CSharp  Python3Parser.g4 success 0.0590939
+CSharp  Python3Lexer.g4 success 0.0141091
+Rendering template file from Java/st.build.ps1 to Generated-Java-0/st.build.ps1
+Rendering template file from Java/st.build.sh to Generated-Java-0/st.build.sh
+Rendering template file from Java/st.clean.ps1 to Generated-Java-0/st.clean.ps1
+Rendering template file from Java/st.clean.sh to Generated-Java-0/st.clean.sh
+Rendering template file from Java/st.ErrorListener.java to Generated-Java-0/st.ErrorListener.java
+Rendering template file from Java/st.makefile to Generated-Java-0/st.makefile
+Rendering template file from Java/st.MyDiagnosticErrorListener.java to Generated-Java-0/st.MyDiagnosticErrorListener.java
+Rendering template file from Java/st.perf.sh to Generated-Java-0/st.perf.sh
+Rendering template file from Java/st.run.ps1 to Generated-Java-0/st.run.ps1
+Rendering template file from Java/st.run.sh to Generated-Java-0/st.run.sh
+Rendering template file from Java/st.Test.java to Generated-Java-0/st.Test.java
+Rendering template file from Java/st.test.ps1 to Generated-Java-0/st.test.ps1
+Rendering template file from Java/st.test.sh to Generated-Java-0/st.test.sh
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/test-parser.sh to Generated-Java-0/test-parser.sh
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/README.md to Generated-Java-0/README.md
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Python3Parser.g4 to Generated-Java-0/Python3Parser.g4
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Python3Lexer.g4 to Generated-Java-0/Python3Lexer.g4
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/pom.xml to Generated-Java-0/pom.xml
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/desc.xml to Generated-Java-0/desc.xml
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/match2.py to Generated-Java-0/small/match2.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/match.py to Generated-Java-0/small/match.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/constants.py to Generated-Java-0/small/constants.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/base_futures.py to Generated-Java-0/small/base_futures.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/__init__.py to Generated-Java-0/large/__init__.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/windows_utils.py to Generated-Java-0/large/windows_utils.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/windows_events.py to Generated-Java-0/large/windows_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/unix_events.py to Generated-Java-0/large/unix_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/unicode_identifier.py to Generated-Java-0/large/unicode_identifier.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/transports.py to Generated-Java-0/large/transports.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/test_utils.py to Generated-Java-0/large/test_utils.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/tasks.py to Generated-Java-0/large/tasks.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/subprocess.py to Generated-Java-0/large/subprocess.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/streams.py to Generated-Java-0/large/streams.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/sslproto.py to Generated-Java-0/large/sslproto.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/selector_events.py to Generated-Java-0/large/selector_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/queues.py to Generated-Java-0/large/queues.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/protocols.py to Generated-Java-0/large/protocols.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/proactor_events.py to Generated-Java-0/large/proactor_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/match2.py to Generated-Java-0/large/match2.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/match.py to Generated-Java-0/large/match.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/log.py to Generated-Java-0/large/log.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/locks.py to Generated-Java-0/large/locks.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/futures.py to Generated-Java-0/large/futures.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/events.py to Generated-Java-0/large/events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/coroutines.py to Generated-Java-0/large/coroutines.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/constants.py to Generated-Java-0/large/constants.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/compat.py to Generated-Java-0/large/compat.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_tasks.py to Generated-Java-0/large/base_tasks.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_subprocess.py to Generated-Java-0/large/base_subprocess.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_futures.py to Generated-Java-0/large/base_futures.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_events.py to Generated-Java-0/large/base_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Java/Python3Parser.stg to Generated-Java-0/Python3Parser.stg
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Java/Python3Lexer.stg to Generated-Java-0/Python3Lexer.stg
++ cd Generated-Java-0
++ JAR='C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar'
++ CLASSPATH='C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar\;.'
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java Python3Lexer.g4
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java Python3Parser.g4
++ javac -cp 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar\;.' ErrorListener.java MyDiagnosticErrorListener.java Python3Lexer.java Python3Parser.java Python3ParserBaseListener.java Python3ParserListener.java Test.java
++ java -cp 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar\;.' Test small/constants.py
+Java 0 small/constants.py success 0.042
+Total Time: 1.086
++ cd ..
++ rm -rf Generated-Java-0
++ ls .
+Cpp
+CSharp
+Dart
+desc.xml
+Go
+Java
+JavaScript
+large
+pom.xml
+Python3
+Python3Lexer.g4
+Python3Parser.g4
+README.md
+small
+test-parser.sh
+TypeScript
++ ls Java
+Python3Lexer.stg
+Python3Parser.stg
++ set +e
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java -lib Java Python3Lexer.g4
+error(206):  cannot find action templates file Python3Lexer.stg given for Python3Lexer
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java -lib Java Python3Parser.g4
+error(206):  cannot find action templates file Python3Parser.stg given for Python3Parser
++ set -e
++ cd ..
++ echo DO OVER
+DO OVER
++ cd /home/Kenne/issues/antlr-4345-again
++ pwd
+/home/Kenne/issues/antlr-4345-again
++ rm -rf antlr4
++ git clone https://github.com/opencastsoftware/antlr4.git
+Cloning into 'antlr4'...
+Updating files:   6% (141/2268)Updating files:   7% (159/2268)Updating files:   8% (182/2268)Updating files:   9% (205/2268)Updating files:  10% (227/2268)Updating files:  11% (250/2268)Updating files:  12% (273/2268)Updating files:  13% (295/2268)Updating files:  14% (318/2268)Updating files:  15% (341/2268)Updating files:  16% (363/2268)Updating files:  17% (386/2268)Updating files:  17% (387/2268)Updating files:  18% (409/2268)Updating files:  19% (431/2268)Updating files:  20% (454/2268)Updating files:  21% (477/2268)Updating files:  22% (499/2268)Updating files:  23% (522/2268)Updating files:  24% (545/2268)Updating files:  25% (567/2268)Updating files:  25% (573/2268)Updating files:  26% (590/2268)Updating files:  27% (613/2268)Updating files:  28% (636/2268)Updating files:  29% (658/2268)Updating files:  30% (681/2268)Updating files:  30% (694/2268)Updating files:  31% (704/2268)Updating files:  32% (726/2268)Updating files:  33% (749/2268)Updating files:  34% (772/2268)Updating files:  35% (794/2268)Updating files:  35% (812/2268)Updating files:  36% (817/2268)Updating files:  37% (840/2268)Updating files:  38% (862/2268)Updating files:  39% (885/2268)Updating files:  40% (908/2268)Updating files:  40% (925/2268)Updating files:  41% (930/2268)Updating files:  42% (953/2268)Updating files:  43% (976/2268)Updating files:  44% (998/2268)Updating files:  45% (1021/2268)Updating files:  46% (1044/2268)Updating files:  46% (1053/2268)Updating files:  47% (1066/2268)Updating files:  48% (1089/2268)Updating files:  49% (1112/2268)Updating files:  50% (1134/2268)Updating files:  51% (1157/2268)Updating files:  51% (1177/2268)Updating files:  52% (1180/2268)Updating files:  53% (1203/2268)Updating files:  54% (1225/2268)Updating files:  55% (1248/2268)Updating files:  56% (1271/2268)Updating files:  56% (1279/2268)Updating files:  57% (1293/2268)Updating files:  58% (1316/2268)Updating files:  59% (1339/2268)Updating files:  60% (1361/2268)Updating files:  61% (1384/2268)Updating files:  62% (1407/2268)Updating files:  62% (1409/2268)Updating files:  63% (1429/2268)Updating files:  64% (1452/2268)Updating files:  65% (1475/2268)Updating files:  66% (1497/2268)Updating files:  67% (1520/2268)Updating files:  67% (1531/2268)Updating files:  68% (1543/2268)Updating files:  69% (1565/2268)Updating files:  70% (1588/2268)Updating files:  71% (1611/2268)Updating files:  72% (1633/2268)Updating files:  72% (1640/2268)Updating files:  73% (1656/2268)Updating files:  74% (1679/2268)Updating files:  75% (1701/2268)Updating files:  76% (1724/2268)Updating files:  77% (1747/2268)Updating files:  77% (1766/2268)Updating files:  78% (1770/2268)Updating files:  79% (1792/2268)Updating files:  80% (1815/2268)Updating files:  81% (1838/2268)Updating files:  82% (1860/2268)Updating files:  82% (1876/2268)Updating files:  83% (1883/2268)Updating files:  84% (1906/2268)Updating files:  85% (1928/2268)Updating files:  86% (1951/2268)Updating files:  87% (1974/2268)Updating files:  87% (1991/2268)Updating files:  88% (1996/2268)Updating files:  89% (2019/2268)Updating files:  90% (2042/2268)Updating files:  91% (2064/2268)Updating files:  92% (2087/2268)Updating files:  92% (2108/2268)Updating files:  93% (2110/2268)Updating files:  94% (2132/2268)Updating files:  95% (2155/2268)Updating files:  96% (2178/2268)Updating files:  97% (2200/2268)Updating files:  98% (2223/2268)Updating files:  98% (2240/2268)Updating files:  99% (2246/2268)Updating files: 100% (2268/2268)Updating files: 100% (2268/2268), done.
++ cd antlr4
++ git checkout action-templates
+Switched to a new branch 'action-templates'
+branch 'action-templates' set up to track 'origin/action-templates'.
++ git status .
+On branch action-templates
+Your branch is up to date with 'origin/action-templates'.
+
+nothing to commit, working tree clean
++ git rev-parse --short HEAD
+c7dc4c80b
++ git rev-parse HEAD
+c7dc4c80b3b3473501802a3eb34e3da21de66ea2
++ export MAVEN_OPTS=-Xmx1G
++ MAVEN_OPTS=-Xmx1G
++ mvn clean
+[INFO] Scanning for projects...
+[WARNING] The project org.antlr:antlr4-master:pom:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-tool-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ANTLR 4                                                            [pom]
+[INFO] ANTLR 4 Runtime                                                    [jar]
+[INFO] ANTLR 4 Tool                                                       [jar]
+[INFO] ANTLR 4 Maven plugin                                      [maven-plugin]
+[INFO] ANTLR 4 Runtime Tests (4th generation)                             [jar]
+[INFO] ANTLR 4 Tool Tests                                                 [jar]
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-master >-----------------------
+[INFO] Building ANTLR 4 4.13.1-SNAPSHOT                                   [1/6]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-master ---
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-runtime >----------------------
+[INFO] Building ANTLR 4 Runtime 4.13.1-SNAPSHOT                           [2/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-runtime ---
+[INFO] 
+[INFO] --------------------------< org.antlr:antlr4 >--------------------------
+[INFO] Building ANTLR 4 Tool 4.13.1-SNAPSHOT                              [3/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4 ---
+[INFO] 
+[INFO] -------------------< org.antlr:antlr4-maven-plugin >--------------------
+[INFO] Building ANTLR 4 Maven plugin 4.13.1-SNAPSHOT                      [4/6]
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-maven-plugin ---
+[INFO] 
+[INFO] -----------------< org.antlr:antlr4-runtime-testsuite >-----------------
+[INFO] Building ANTLR 4 Runtime Tests (4th generation) 4.13.1-SNAPSHOT    [5/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-runtime-testsuite ---
+[INFO] 
+[INFO] ------------------< org.antlr:antlr4-tool-testsuite >-------------------
+[INFO] Building ANTLR 4 Tool Tests 4.13.1-SNAPSHOT                        [6/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-tool-testsuite ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for ANTLR 4 4.13.1-SNAPSHOT:
+[INFO] 
+[INFO] ANTLR 4 ............................................ SUCCESS [  0.170 s]
+[INFO] ANTLR 4 Runtime .................................... SUCCESS [  0.071 s]
+[INFO] ANTLR 4 Tool ....................................... SUCCESS [  0.007 s]
+[INFO] ANTLR 4 Maven plugin ............................... SUCCESS [  0.042 s]
+[INFO] ANTLR 4 Runtime Tests (4th generation) ............. SUCCESS [  0.116 s]
+[INFO] ANTLR 4 Tool Tests ................................. SUCCESS [  0.003 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.147 s
+[INFO] Finished at: 2023-08-30T13:15:42-04:00
+[INFO] ------------------------------------------------------------------------
++ mvn -DskipTests install
+[INFO] Scanning for projects...
+[WARNING] The project org.antlr:antlr4-master:pom:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-tool-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ANTLR 4                                                            [pom]
+[INFO] ANTLR 4 Runtime                                                    [jar]
+[INFO] ANTLR 4 Tool                                                       [jar]
+[INFO] ANTLR 4 Maven plugin                                      [maven-plugin]
+[INFO] ANTLR 4 Runtime Tests (4th generation)                             [jar]
+[INFO] ANTLR 4 Tool Tests                                                 [jar]
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-master >-----------------------
+[INFO] Building ANTLR 4 4.13.1-SNAPSHOT                                   [1/6]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-master ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-master ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-master\4.13.1-SNAPSHOT\antlr4-master-4.13.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-runtime >----------------------
+[INFO] Building ANTLR 4 Runtime 4.13.1-SNAPSHOT                           [2/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-runtime ---
+[INFO] 
+[INFO] --- graphviz-maven-plugin:1.0:dot (default) @ antlr4-runtime ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-runtime ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 174 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime/Java/src/org/antlr/v4/runtime/tree/pattern/ParseTreePatternMatcher.java: Some input files use or override a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime/Java/src/org/antlr/v4/runtime/tree/pattern/ParseTreePatternMatcher.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:5.1.7:manifest (bundle-manifest) @ antlr4-runtime ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\classes\META-INF\MANIFEST.MF
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\test
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-runtime ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ antlr4-runtime ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ antlr4-runtime ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (default) > generate-sources @ antlr4-runtime >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-runtime ---
+[INFO] 
+[INFO] --- graphviz-maven-plugin:1.0:dot (default) @ antlr4-runtime ---
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (default) < generate-sources @ antlr4-runtime <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (default) @ antlr4-runtime ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-runtime ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime\4.13.1-SNAPSHOT\antlr4-runtime-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime\4.13.1-SNAPSHOT\antlr4-runtime-4.13.1-SNAPSHOT.pom
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT-sources.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime\4.13.1-SNAPSHOT\antlr4-runtime-4.13.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --------------------------< org.antlr:antlr4 >--------------------------
+[INFO] Building ANTLR 4 Tool 4.13.1-SNAPSHOT                              [3/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (default) @ antlr4 ---
+[INFO] Source directory: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr4-tool-codegen added.
+[INFO] 
+[INFO] --- antlr3-maven-plugin:3.5.3:antlr (default) @ antlr4 ---
+[INFO] ANTLR: Processing source directory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src
+ANTLR Parser Generator  Version 3.5.3
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ANTLRLexer.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRLexer.g
+org\antlr\v4\parse\ANTLRLexer.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ANTLRParser.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRParser.g
+org\antlr\v4\parse\ANTLRParser.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\BlockSetTransformer.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\BlockSetTransformer.g
+org\antlr\v4\parse\BlockSetTransformer.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\GrammarTreeVisitor.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\GrammarTreeVisitor.g
+org\antlr\v4\parse\GrammarTreeVisitor.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ActionSplitter.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ActionSplitter.g
+org\antlr\v4\parse\ActionSplitter.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\LeftRecursiveRuleWalker.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\LeftRecursiveRuleWalker.g
+org\antlr\v4\parse\LeftRecursiveRuleWalker.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\codegen\SourceGenTriggers.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\codegen\SourceGenTriggers.g
+org\antlr\v4\codegen\SourceGenTriggers.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ATNBuilder.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ATNBuilder.g
+org\antlr\v4\parse\ATNBuilder.g
+[INFO] 
+[INFO] --- string-template-maven-plugin:1.1:render (default) @ antlr4 ---
+[INFO] Unable to find the class: org.antlr.v4.unicode.UnicodeDataTemplateController.  Attempting to compile it...
+[INFO] Compiling org\antlr\v4\unicode\UnicodeDataTemplateController.java...
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\classes
+[WARNING] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\unicode\UnicodeDataTemplateController.java uses or overrides a deprecated API.
+[WARNING] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: Recompile with -Xlint:deprecation for details.
+[INFO] Invoking controller method: org.antlr.v4.unicode.UnicodeDataTemplateController.getProperties()
+[INFO] Adding compile source root: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\tool
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (fix-antlr3-RB) @ antlr4 ---
+[INFO] Replacement run on 8 files.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 18 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 240 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\unicode\UnicodeDataTemplateController.java uses or overrides a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\test
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ antlr4 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ antlr4 ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (default) > generate-sources @ antlr4 >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (default) @ antlr4 ---
+[INFO] Source directory: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr4-tool-codegen added.
+[INFO] 
+[INFO] --- antlr3-maven-plugin:3.5.3:antlr (default) @ antlr4 ---
+[INFO] ANTLR: Processing source directory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src
+ANTLR Parser Generator  Version 3.5.3
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRLexer.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRParser.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\BlockSetTransformer.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\GrammarTreeVisitor.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ActionSplitter.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\LeftRecursiveRuleWalker.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\codegen\SourceGenTriggers.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ATNBuilder.g is up to date - build skipped
+[INFO] 
+[INFO] --- string-template-maven-plugin:1.1:render (default) @ antlr4 ---
+[INFO] Invoking controller method: org.antlr.v4.unicode.UnicodeDataTemplateController.getProperties()
+[INFO] Adding compile source root: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\tool
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (default) < generate-sources @ antlr4 <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (default) @ antlr4 ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:3.2.4:shade (default) @ antlr4 ---
+[INFO] Including org.antlr:antlr4-runtime:jar:4.13.1-SNAPSHOT in the shaded jar.
+[INFO] Including org.antlr:antlr-runtime:jar:3.5.3 in the shaded jar.
+[INFO] Including org.antlr:ST4:jar:4.3.4 in the shaded jar.
+[INFO] Including org.abego.treelayout:org.abego.treelayout.core:jar:1.0.3 in the shaded jar.
+[INFO] Excluding com.ibm.icu:icu4j:jar:72.1 from the shaded jar.
+[WARNING] ST4-4.3.4.jar, antlr-runtime-3.5.3.jar, antlr4-4.13.1-SNAPSHOT.jar, antlr4-runtime-4.13.1-SNAPSHOT.jar, org.abego.treelayout.core-1.0.3.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Attaching shaded artifact.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4 ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT.pom
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-sources.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT-sources.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT-complete.jar
+[INFO] 
+[INFO] -------------------< org.antlr:antlr4-maven-plugin >--------------------
+[INFO] Building ANTLR 4 Maven plugin 4.13.1-SNAPSHOT                      [4/6]
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-maven-plugin ---
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:helpmojo (help-goal) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] bsh mojo extractor found 0 mojo descriptor.
+[INFO] ant mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 0 mojo descriptor.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\classes
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:descriptor (default-descriptor) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] bsh mojo extractor found 0 mojo descriptor.
+[INFO] ant mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:descriptor (mojo-descriptor) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] bsh mojo extractor found 0 mojo descriptor.
+[INFO] ant mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\src\test\resources
+[INFO] 
+[INFO] --- takari-lifecycle-plugin:2.0.7:testProperties (testProperties) @ antlr4-maven-plugin ---
+[INFO] Previous incremental build state does not exist, performing full build
+[WARNING] File 'C:\Users\Kenne\.m2\settings.xml' does not exist! It will be ignored.
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\test-classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/antlr4-maven-plugin/src/test/java/org/antlr/mojo/antlr4/Antlr4MojoTest.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\src\test\java\org\antlr\mojo\antlr4\Antlr4MojoTest.java uses or overrides a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/antlr4-maven-plugin/src/test/java/org/antlr/mojo/antlr4/Antlr4MojoTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ antlr4-maven-plugin ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.2:jar (default-jar) @ antlr4-maven-plugin ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\antlr4-maven-plugin-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:addPluginArtifactMetadata (default-addPluginArtifactMetadata) @ antlr4-maven-plugin ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-maven-plugin ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\antlr4-maven-plugin-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-maven-plugin\4.13.1-SNAPSHOT\antlr4-maven-plugin-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-maven-plugin\4.13.1-SNAPSHOT\antlr4-maven-plugin-4.13.1-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.antlr:antlr4-runtime-testsuite >-----------------
+[INFO] Building ANTLR 4 Runtime Tests (4th generation) 4.13.1-SNAPSHOT    [5/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-runtime-testsuite ---
+[INFO] 
+[INFO] --- antlr4-maven-plugin:4.13.1-SNAPSHOT:antlr4 (default) @ antlr4-runtime-testsuite ---
+[INFO] ANTLR 4: Processing source directory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\test
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\Java.g4
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\VisitorCalc.g4
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\VisitorBasic.g4
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\perf\graphemes.g4
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-runtime-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 378 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-runtime-testsuite ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-runtime-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 67 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-runtime-testsuite ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 83 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\test-classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime-testsuite/test/org/antlr/v4/test/runtime/java/api/perf/TimeLexerSpeed.java: Some input files use or override a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime-testsuite/test/org/antlr/v4/test/runtime/java/api/perf/TimeLexerSpeed.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ antlr4-runtime-testsuite ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ antlr4-runtime-testsuite ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:test-jar (default) @ antlr4-runtime-testsuite ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-runtime-testsuite ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime-testsuite\4.13.1-SNAPSHOT\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime-testsuite\4.13.1-SNAPSHOT\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.pom
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT-tests.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime-testsuite\4.13.1-SNAPSHOT\antlr4-runtime-testsuite-4.13.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ------------------< org.antlr:antlr4-tool-testsuite >-------------------
+[INFO] Building ANTLR 4 Tool Tests 4.13.1-SNAPSHOT                        [6/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-tool-testsuite ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-tool-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-tool-testsuite ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-tool-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 57 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-tool-testsuite ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 53 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\target\test-classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/ToolTestUtils.java: Some input files use or override a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/ToolTestUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/TestUtils.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\test\org\antlr\v4\test\tool\TestUtils.java uses unchecked or unsafe operations.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/TestUtils.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ antlr4-tool-testsuite ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.2:jar (default-jar) @ antlr4-tool-testsuite ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\target\antlr4-tool-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-tool-testsuite ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\target\antlr4-tool-testsuite-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-tool-testsuite\4.13.1-SNAPSHOT\antlr4-tool-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-tool-testsuite\4.13.1-SNAPSHOT\antlr4-tool-testsuite-4.13.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for ANTLR 4 4.13.1-SNAPSHOT:
+[INFO] 
+[INFO] ANTLR 4 ............................................ SUCCESS [  0.376 s]
+[INFO] ANTLR 4 Runtime .................................... SUCCESS [ 13.572 s]
+[INFO] ANTLR 4 Tool ....................................... SUCCESS [ 11.182 s]
+[INFO] ANTLR 4 Maven plugin ............................... SUCCESS [  4.889 s]
+[INFO] ANTLR 4 Runtime Tests (4th generation) ............. SUCCESS [  5.958 s]
+[INFO] ANTLR 4 Tool Tests ................................. SUCCESS [  1.523 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  38.259 s
+[INFO] Finished at: 2023-08-30T13:16:22-04:00
+[INFO] ------------------------------------------------------------------------
+++ pwd
++ whereisit=/home/Kenne/issues/antlr-4345-again/antlr4/tool/target/antlr4-4.13.1-SNAPSHOT-complete.jar
+++ cygpath -w /home/Kenne/issues/antlr-4345-again/antlr4/tool/target/antlr4-4.13.1-SNAPSHOT-complete.jar
++ whereisit='C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar'
++ echo 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar'
+C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar
++ cd ..
++ rm -rf stg-python3
++ git clone https://github.com/kaby76/stg-python3
+Cloning into 'stg-python3'...
++ cd stg-python3
++ java --version
+openjdk 11.0.1 2018-10-16
+OpenJDK Runtime Environment 18.9 (build 11.0.1+13)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.1+13, mixed mode)
++ trgen --version
+trgen 0.21.2
+
++ trgen -t Java
+C:\msys64\home\Kenne\issues\antlr-4345-again\stg-python3
+CSharp  Python3Parser.g4 success 0.061289
+CSharp  Python3Lexer.g4 success 0.0141577
+Rendering template file from Java/st.build.ps1 to Generated-Java-0/st.build.ps1
+Rendering template file from Java/st.build.sh to Generated-Java-0/st.build.sh
+Rendering template file from Java/st.clean.ps1 to Generated-Java-0/st.clean.ps1
+Rendering template file from Java/st.clean.sh to Generated-Java-0/st.clean.sh
+Rendering template file from Java/st.ErrorListener.java to Generated-Java-0/st.ErrorListener.java
+Rendering template file from Java/st.makefile to Generated-Java-0/st.makefile
+Rendering template file from Java/st.MyDiagnosticErrorListener.java to Generated-Java-0/st.MyDiagnosticErrorListener.java
+Rendering template file from Java/st.perf.sh to Generated-Java-0/st.perf.sh
+Rendering template file from Java/st.run.ps1 to Generated-Java-0/st.run.ps1
+Rendering template file from Java/st.run.sh to Generated-Java-0/st.run.sh
+Rendering template file from Java/st.Test.java to Generated-Java-0/st.Test.java
+Rendering template file from Java/st.test.ps1 to Generated-Java-0/st.test.ps1
+Rendering template file from Java/st.test.sh to Generated-Java-0/st.test.sh
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/test-parser.sh to Generated-Java-0/test-parser.sh
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/README.md to Generated-Java-0/README.md
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Python3Parser.g4 to Generated-Java-0/Python3Parser.g4
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Python3Lexer.g4 to Generated-Java-0/Python3Lexer.g4
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/pom.xml to Generated-Java-0/pom.xml
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/desc.xml to Generated-Java-0/desc.xml
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/match2.py to Generated-Java-0/small/match2.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/match.py to Generated-Java-0/small/match.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/constants.py to Generated-Java-0/small/constants.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/base_futures.py to Generated-Java-0/small/base_futures.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/__init__.py to Generated-Java-0/large/__init__.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/windows_utils.py to Generated-Java-0/large/windows_utils.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/windows_events.py to Generated-Java-0/large/windows_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/unix_events.py to Generated-Java-0/large/unix_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/unicode_identifier.py to Generated-Java-0/large/unicode_identifier.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/transports.py to Generated-Java-0/large/transports.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/test_utils.py to Generated-Java-0/large/test_utils.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/tasks.py to Generated-Java-0/large/tasks.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/subprocess.py to Generated-Java-0/large/subprocess.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/streams.py to Generated-Java-0/large/streams.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/sslproto.py to Generated-Java-0/large/sslproto.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/selector_events.py to Generated-Java-0/large/selector_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/queues.py to Generated-Java-0/large/queues.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/protocols.py to Generated-Java-0/large/protocols.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/proactor_events.py to Generated-Java-0/large/proactor_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/match2.py to Generated-Java-0/large/match2.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/match.py to Generated-Java-0/large/match.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/log.py to Generated-Java-0/large/log.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/locks.py to Generated-Java-0/large/locks.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/futures.py to Generated-Java-0/large/futures.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/events.py to Generated-Java-0/large/events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/coroutines.py to Generated-Java-0/large/coroutines.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/constants.py to Generated-Java-0/large/constants.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/compat.py to Generated-Java-0/large/compat.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_tasks.py to Generated-Java-0/large/base_tasks.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_subprocess.py to Generated-Java-0/large/base_subprocess.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_futures.py to Generated-Java-0/large/base_futures.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_events.py to Generated-Java-0/large/base_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Java/Python3Parser.stg to Generated-Java-0/Python3Parser.stg
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Java/Python3Lexer.stg to Generated-Java-0/Python3Lexer.stg
++ cd Generated-Java-0
++ JAR='C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar'
++ CLASSPATH='C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar\;.'
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java Python3Lexer.g4
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java Python3Parser.g4
++ javac -cp 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar\;.' ErrorListener.java MyDiagnosticErrorListener.java Python3Lexer.java Python3Parser.java Python3ParserBaseListener.java Python3ParserListener.java Test.java
++ java -cp 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar\;.' Test small/constants.py
+Java 0 small/constants.py success 0.041
+Total Time: 0.896
++ cd ..
++ rm -rf Generated-Java-0
++ ls .
+Cpp
+CSharp
+Dart
+desc.xml
+Go
+Java
+JavaScript
+large
+pom.xml
+Python3
+Python3Lexer.g4
+Python3Parser.g4
+README.md
+small
+test-parser.sh
+TypeScript
++ ls Java
+Python3Lexer.stg
+Python3Parser.stg
++ set +e
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java -lib Java Python3Lexer.g4
+error(206):  cannot find action templates file Python3Lexer.stg given for Python3Lexer
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java -lib Java Python3Parser.g4
+error(206):  cannot find action templates file Python3Parser.stg given for Python3Parser
++ set -e
++ echo DO OVER WITH FIX
+DO OVER WITH FIX
++ cd /home/Kenne/issues/antlr-4345-again
++ pwd
+/home/Kenne/issues/antlr-4345-again
++ rm -rf antlr4
++ git clone https://github.com/opencastsoftware/antlr4.git
+Cloning into 'antlr4'...
+Updating files:   6% (139/2268)Updating files:   7% (159/2268)Updating files:   8% (182/2268)Updating files:   9% (205/2268)Updating files:  10% (227/2268)Updating files:  11% (250/2268)Updating files:  12% (273/2268)Updating files:  13% (295/2268)Updating files:  14% (318/2268)Updating files:  15% (341/2268)Updating files:  16% (363/2268)Updating files:  16% (366/2268)Updating files:  17% (386/2268)Updating files:  18% (409/2268)Updating files:  19% (431/2268)Updating files:  20% (454/2268)Updating files:  21% (477/2268)Updating files:  22% (499/2268)Updating files:  23% (522/2268)Updating files:  23% (543/2268)Updating files:  24% (545/2268)Updating files:  25% (567/2268)Updating files:  26% (590/2268)Updating files:  27% (613/2268)Updating files:  28% (636/2268)Updating files:  29% (658/2268)Updating files:  29% (668/2268)Updating files:  30% (681/2268)Updating files:  31% (704/2268)Updating files:  32% (726/2268)Updating files:  33% (749/2268)Updating files:  34% (772/2268)Updating files:  34% (776/2268)Updating files:  35% (794/2268)Updating files:  36% (817/2268)Updating files:  37% (840/2268)Updating files:  38% (862/2268)Updating files:  39% (885/2268)Updating files:  40% (908/2268)Updating files:  41% (930/2268)Updating files:  42% (953/2268)Updating files:  43% (976/2268)Updating files:  44% (998/2268)Updating files:  44% (1004/2268)Updating files:  45% (1021/2268)Updating files:  46% (1044/2268)Updating files:  47% (1066/2268)Updating files:  48% (1089/2268)Updating files:  49% (1112/2268)Updating files:  49% (1126/2268)Updating files:  50% (1134/2268)Updating files:  51% (1157/2268)Updating files:  52% (1180/2268)Updating files:  53% (1203/2268)Updating files:  54% (1225/2268)Updating files:  54% (1243/2268)Updating files:  55% (1248/2268)Updating files:  56% (1271/2268)Updating files:  57% (1293/2268)Updating files:  58% (1316/2268)Updating files:  59% (1339/2268)Updating files:  59% (1345/2268)Updating files:  60% (1361/2268)Updating files:  61% (1384/2268)Updating files:  62% (1407/2268)Updating files:  63% (1429/2268)Updating files:  64% (1452/2268)Updating files:  64% (1466/2268)Updating files:  65% (1475/2268)Updating files:  66% (1497/2268)Updating files:  67% (1520/2268)Updating files:  68% (1543/2268)Updating files:  69% (1565/2268)Updating files:  69% (1573/2268)Updating files:  70% (1588/2268)Updating files:  71% (1611/2268)Updating files:  72% (1633/2268)Updating files:  73% (1656/2268)Updating files:  74% (1679/2268)Updating files:  74% (1680/2268)Updating files:  75% (1701/2268)Updating files:  76% (1724/2268)Updating files:  77% (1747/2268)Updating files:  78% (1770/2268)Updating files:  79% (1792/2268)Updating files:  79% (1795/2268)Updating files:  80% (1815/2268)Updating files:  81% (1838/2268)Updating files:  82% (1860/2268)Updating files:  83% (1883/2268)Updating files:  83% (1894/2268)Updating files:  84% (1906/2268)Updating files:  85% (1928/2268)Updating files:  86% (1951/2268)Updating files:  87% (1974/2268)Updating files:  88% (1996/2268)Updating files:  88% (2001/2268)Updating files:  89% (2019/2268)Updating files:  90% (2042/2268)Updating files:  91% (2064/2268)Updating files:  92% (2087/2268)Updating files:  93% (2110/2268)Updating files:  93% (2121/2268)Updating files:  94% (2132/2268)Updating files:  95% (2155/2268)Updating files:  96% (2178/2268)Updating files:  97% (2200/2268)Updating files:  98% (2223/2268)Updating files:  99% (2246/2268)Updating files:  99% (2249/2268)Updating files: 100% (2268/2268)Updating files: 100% (2268/2268), done.
++ cd antlr4
++ git checkout action-templates
+Switched to a new branch 'action-templates'
+branch 'action-templates' set up to track 'origin/action-templates'.
++ git status .
+On branch action-templates
+Your branch is up to date with 'origin/action-templates'.
+
+nothing to commit, working tree clean
++ git rev-parse --short HEAD
+c7dc4c80b
++ git rev-parse HEAD
+c7dc4c80b3b3473501802a3eb34e3da21de66ea2
++ pushd tool/src/org/antlr/v4/tool/
+~/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/tool ~/issues/antlr-4345-again/antlr4
++ patch GrammarTransformPipeline.java /home/Kenne/issues/antlr-4345-again/fix.txt
+patching file GrammarTransformPipeline.java
++ popd
+~/issues/antlr-4345-again/antlr4
++ export MAVEN_OPTS=-Xmx1G
++ MAVEN_OPTS=-Xmx1G
++ mvn clean
+[INFO] Scanning for projects...
+[WARNING] The project org.antlr:antlr4-master:pom:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-tool-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ANTLR 4                                                            [pom]
+[INFO] ANTLR 4 Runtime                                                    [jar]
+[INFO] ANTLR 4 Tool                                                       [jar]
+[INFO] ANTLR 4 Maven plugin                                      [maven-plugin]
+[INFO] ANTLR 4 Runtime Tests (4th generation)                             [jar]
+[INFO] ANTLR 4 Tool Tests                                                 [jar]
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-master >-----------------------
+[INFO] Building ANTLR 4 4.13.1-SNAPSHOT                                   [1/6]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-master ---
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-runtime >----------------------
+[INFO] Building ANTLR 4 Runtime 4.13.1-SNAPSHOT                           [2/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-runtime ---
+[INFO] 
+[INFO] --------------------------< org.antlr:antlr4 >--------------------------
+[INFO] Building ANTLR 4 Tool 4.13.1-SNAPSHOT                              [3/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4 ---
+[INFO] 
+[INFO] -------------------< org.antlr:antlr4-maven-plugin >--------------------
+[INFO] Building ANTLR 4 Maven plugin 4.13.1-SNAPSHOT                      [4/6]
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-maven-plugin ---
+[INFO] 
+[INFO] -----------------< org.antlr:antlr4-runtime-testsuite >-----------------
+[INFO] Building ANTLR 4 Runtime Tests (4th generation) 4.13.1-SNAPSHOT    [5/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-runtime-testsuite ---
+[INFO] 
+[INFO] ------------------< org.antlr:antlr4-tool-testsuite >-------------------
+[INFO] Building ANTLR 4 Tool Tests 4.13.1-SNAPSHOT                        [6/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ antlr4-tool-testsuite ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for ANTLR 4 4.13.1-SNAPSHOT:
+[INFO] 
+[INFO] ANTLR 4 ............................................ SUCCESS [  0.175 s]
+[INFO] ANTLR 4 Runtime .................................... SUCCESS [  0.072 s]
+[INFO] ANTLR 4 Tool ....................................... SUCCESS [  0.009 s]
+[INFO] ANTLR 4 Maven plugin ............................... SUCCESS [  0.045 s]
+[INFO] ANTLR 4 Runtime Tests (4th generation) ............. SUCCESS [  0.117 s]
+[INFO] ANTLR 4 Tool Tests ................................. SUCCESS [  0.003 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.167 s
+[INFO] Finished at: 2023-08-30T13:17:09-04:00
+[INFO] ------------------------------------------------------------------------
++ mvn -DskipTests install
+[INFO] Scanning for projects...
+[WARNING] The project org.antlr:antlr4-master:pom:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-runtime-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[WARNING] The project org.antlr:antlr4-tool-testsuite:jar:4.13.1-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ANTLR 4                                                            [pom]
+[INFO] ANTLR 4 Runtime                                                    [jar]
+[INFO] ANTLR 4 Tool                                                       [jar]
+[INFO] ANTLR 4 Maven plugin                                      [maven-plugin]
+[INFO] ANTLR 4 Runtime Tests (4th generation)                             [jar]
+[INFO] ANTLR 4 Tool Tests                                                 [jar]
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-master >-----------------------
+[INFO] Building ANTLR 4 4.13.1-SNAPSHOT                                   [1/6]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-master ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-master ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-master\4.13.1-SNAPSHOT\antlr4-master-4.13.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------------< org.antlr:antlr4-runtime >----------------------
+[INFO] Building ANTLR 4 Runtime 4.13.1-SNAPSHOT                           [2/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-runtime ---
+[INFO] 
+[INFO] --- graphviz-maven-plugin:1.0:dot (default) @ antlr4-runtime ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-runtime ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 174 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime/Java/src/org/antlr/v4/runtime/tree/pattern/ParseTreePatternMatcher.java: Some input files use or override a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime/Java/src/org/antlr/v4/runtime/tree/pattern/ParseTreePatternMatcher.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:5.1.7:manifest (bundle-manifest) @ antlr4-runtime ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\classes\META-INF\MANIFEST.MF
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\test
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-runtime ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ antlr4-runtime ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ antlr4-runtime ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (default) > generate-sources @ antlr4-runtime >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-runtime ---
+[INFO] 
+[INFO] --- graphviz-maven-plugin:1.0:dot (default) @ antlr4-runtime ---
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (default) < generate-sources @ antlr4-runtime <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (default) @ antlr4-runtime ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-runtime ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime\4.13.1-SNAPSHOT\antlr4-runtime-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime\4.13.1-SNAPSHOT\antlr4-runtime-4.13.1-SNAPSHOT.pom
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime\Java\target\antlr4-runtime-4.13.1-SNAPSHOT-sources.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime\4.13.1-SNAPSHOT\antlr4-runtime-4.13.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --------------------------< org.antlr:antlr4 >--------------------------
+[INFO] Building ANTLR 4 Tool 4.13.1-SNAPSHOT                              [3/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (default) @ antlr4 ---
+[INFO] Source directory: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr4-tool-codegen added.
+[INFO] 
+[INFO] --- antlr3-maven-plugin:3.5.3:antlr (default) @ antlr4 ---
+[INFO] ANTLR: Processing source directory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src
+ANTLR Parser Generator  Version 3.5.3
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ANTLRLexer.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRLexer.g
+org\antlr\v4\parse\ANTLRLexer.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ANTLRParser.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRParser.g
+org\antlr\v4\parse\ANTLRParser.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\BlockSetTransformer.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\BlockSetTransformer.g
+org\antlr\v4\parse\BlockSetTransformer.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\GrammarTreeVisitor.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\GrammarTreeVisitor.g
+org\antlr\v4\parse\GrammarTreeVisitor.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ActionSplitter.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ActionSplitter.g
+org\antlr\v4\parse\ActionSplitter.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\LeftRecursiveRuleWalker.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\LeftRecursiveRuleWalker.g
+org\antlr\v4\parse\LeftRecursiveRuleWalker.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\codegen\SourceGenTriggers.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\codegen\SourceGenTriggers.g
+org\antlr\v4\codegen\SourceGenTriggers.g
+Output file C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr3\org\antlr\v4\parse\ATNBuilder.java does not exist: must build C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ATNBuilder.g
+org\antlr\v4\parse\ATNBuilder.g
+[INFO] 
+[INFO] --- string-template-maven-plugin:1.1:render (default) @ antlr4 ---
+[INFO] Unable to find the class: org.antlr.v4.unicode.UnicodeDataTemplateController.  Attempting to compile it...
+[INFO] Compiling org\antlr\v4\unicode\UnicodeDataTemplateController.java...
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\classes
+[WARNING] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\unicode\UnicodeDataTemplateController.java uses or overrides a deprecated API.
+[WARNING] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: Recompile with -Xlint:deprecation for details.
+[INFO] Invoking controller method: org.antlr.v4.unicode.UnicodeDataTemplateController.getProperties()
+[INFO] Adding compile source root: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\tool
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (fix-antlr3-RB) @ antlr4 ---
+[INFO] Replacement run on 8 files.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 18 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 240 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\unicode\UnicodeDataTemplateController.java uses or overrides a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool/src/org/antlr/v4/unicode/UnicodeDataTemplateController.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\test
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ antlr4 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ antlr4 ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (default) > generate-sources @ antlr4 >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (default) @ antlr4 ---
+[INFO] Source directory: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\antlr4-tool-codegen added.
+[INFO] 
+[INFO] --- antlr3-maven-plugin:3.5.3:antlr (default) @ antlr4 ---
+[INFO] ANTLR: Processing source directory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src
+ANTLR Parser Generator  Version 3.5.3
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRLexer.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ANTLRParser.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\BlockSetTransformer.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\GrammarTreeVisitor.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ActionSplitter.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\LeftRecursiveRuleWalker.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\codegen\SourceGenTriggers.g is up to date - build skipped
+Grammar C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\src\org\antlr\v4\parse\ATNBuilder.g is up to date - build skipped
+[INFO] 
+[INFO] --- string-template-maven-plugin:1.1:render (default) @ antlr4 ---
+[INFO] Invoking controller method: org.antlr.v4.unicode.UnicodeDataTemplateController.getProperties()
+[INFO] Adding compile source root: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\generated-sources\tool
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (default) < generate-sources @ antlr4 <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (default) @ antlr4 ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:3.2.4:shade (default) @ antlr4 ---
+[INFO] Including org.antlr:antlr4-runtime:jar:4.13.1-SNAPSHOT in the shaded jar.
+[INFO] Including org.antlr:antlr-runtime:jar:3.5.3 in the shaded jar.
+[INFO] Including org.antlr:ST4:jar:4.3.4 in the shaded jar.
+[INFO] Including org.abego.treelayout:org.abego.treelayout.core:jar:1.0.3 in the shaded jar.
+[INFO] Excluding com.ibm.icu:icu4j:jar:72.1 from the shaded jar.
+[WARNING] ST4-4.3.4.jar, antlr-runtime-3.5.3.jar, antlr4-4.13.1-SNAPSHOT.jar, antlr4-runtime-4.13.1-SNAPSHOT.jar, org.abego.treelayout.core-1.0.3.jar define 1 overlapping resource: 
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Attaching shaded artifact.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4 ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT.pom
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-sources.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT-sources.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4\4.13.1-SNAPSHOT\antlr4-4.13.1-SNAPSHOT-complete.jar
+[INFO] 
+[INFO] -------------------< org.antlr:antlr4-maven-plugin >--------------------
+[INFO] Building ANTLR 4 Maven plugin 4.13.1-SNAPSHOT                      [4/6]
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-maven-plugin ---
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:helpmojo (help-goal) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] bsh mojo extractor found 0 mojo descriptor.
+[INFO] ant mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 0 mojo descriptor.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\classes
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:descriptor (default-descriptor) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] bsh mojo extractor found 0 mojo descriptor.
+[INFO] ant mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:descriptor (mojo-descriptor) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] bsh mojo extractor found 0 mojo descriptor.
+[INFO] ant mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\src\test\resources
+[INFO] 
+[INFO] --- takari-lifecycle-plugin:2.0.7:testProperties (testProperties) @ antlr4-maven-plugin ---
+[INFO] Previous incremental build state does not exist, performing full build
+[WARNING] File 'C:\Users\Kenne\.m2\settings.xml' does not exist! It will be ignored.
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\test-classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/antlr4-maven-plugin/src/test/java/org/antlr/mojo/antlr4/Antlr4MojoTest.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\src\test\java\org\antlr\mojo\antlr4\Antlr4MojoTest.java uses or overrides a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/antlr4-maven-plugin/src/test/java/org/antlr/mojo/antlr4/Antlr4MojoTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ antlr4-maven-plugin ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.2:jar (default-jar) @ antlr4-maven-plugin ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\antlr4-maven-plugin-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.6.2:addPluginArtifactMetadata (default-addPluginArtifactMetadata) @ antlr4-maven-plugin ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-maven-plugin ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\target\antlr4-maven-plugin-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-maven-plugin\4.13.1-SNAPSHOT\antlr4-maven-plugin-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\antlr4-maven-plugin\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-maven-plugin\4.13.1-SNAPSHOT\antlr4-maven-plugin-4.13.1-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.antlr:antlr4-runtime-testsuite >-----------------
+[INFO] Building ANTLR 4 Runtime Tests (4th generation) 4.13.1-SNAPSHOT    [5/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-runtime-testsuite ---
+[INFO] 
+[INFO] --- antlr4-maven-plugin:4.13.1-SNAPSHOT:antlr4 (default) @ antlr4-runtime-testsuite ---
+[INFO] ANTLR 4: Processing source directory C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\test
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\Java.g4
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\VisitorCalc.g4
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\VisitorBasic.g4
+[INFO] Processing grammar: org\antlr\v4\test\runtime\java\api\perf\graphemes.g4
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-runtime-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 378 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-runtime-testsuite ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-runtime-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 67 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-runtime-testsuite ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 83 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\test-classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime-testsuite/test/org/antlr/v4/test/runtime/java/api/perf/TimeLexerSpeed.java: Some input files use or override a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/runtime-testsuite/test/org/antlr/v4/test/runtime/java/api/perf/TimeLexerSpeed.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ antlr4-runtime-testsuite ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ antlr4-runtime-testsuite ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:test-jar (default) @ antlr4-runtime-testsuite ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-runtime-testsuite ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime-testsuite\4.13.1-SNAPSHOT\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime-testsuite\4.13.1-SNAPSHOT\antlr4-runtime-testsuite-4.13.1-SNAPSHOT.pom
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\runtime-testsuite\target\antlr4-runtime-testsuite-4.13.1-SNAPSHOT-tests.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-runtime-testsuite\4.13.1-SNAPSHOT\antlr4-runtime-testsuite-4.13.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ------------------< org.antlr:antlr4-tool-testsuite >-------------------
+[INFO] Building ANTLR 4 Tool Tests 4.13.1-SNAPSHOT                        [6/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ antlr4-tool-testsuite ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ antlr4-tool-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ antlr4-tool-testsuite ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ antlr4-tool-testsuite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 57 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ antlr4-tool-testsuite ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 53 source files to C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\target\test-classes
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/ToolTestUtils.java: Some input files use or override a deprecated API.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/ToolTestUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/TestUtils.java: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\test\org\antlr\v4\test\tool\TestUtils.java uses unchecked or unsafe operations.
+[INFO] /C:/msys64/home/Kenne/issues/antlr-4345-again/antlr4/tool-testsuite/test/org/antlr/v4/test/tool/TestUtils.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ antlr4-tool-testsuite ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.2:jar (default-jar) @ antlr4-tool-testsuite ---
+[INFO] Building jar: C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\target\antlr4-tool-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ antlr4-tool-testsuite ---
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\target\antlr4-tool-testsuite-4.13.1-SNAPSHOT.jar to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-tool-testsuite\4.13.1-SNAPSHOT\antlr4-tool-testsuite-4.13.1-SNAPSHOT.jar
+[INFO] Installing C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool-testsuite\pom.xml to C:\Users\Kenne\.m2\repository\org\antlr\antlr4-tool-testsuite\4.13.1-SNAPSHOT\antlr4-tool-testsuite-4.13.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for ANTLR 4 4.13.1-SNAPSHOT:
+[INFO] 
+[INFO] ANTLR 4 ............................................ SUCCESS [  0.389 s]
+[INFO] ANTLR 4 Runtime .................................... SUCCESS [ 13.449 s]
+[INFO] ANTLR 4 Tool ....................................... SUCCESS [ 10.686 s]
+[INFO] ANTLR 4 Maven plugin ............................... SUCCESS [  4.730 s]
+[INFO] ANTLR 4 Runtime Tests (4th generation) ............. SUCCESS [  6.018 s]
+[INFO] ANTLR 4 Tool Tests ................................. SUCCESS [  1.431 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  37.448 s
+[INFO] Finished at: 2023-08-30T13:17:48-04:00
+[INFO] ------------------------------------------------------------------------
+++ pwd
++ whereisit=/home/Kenne/issues/antlr-4345-again/antlr4/tool/target/antlr4-4.13.1-SNAPSHOT-complete.jar
+++ cygpath -w /home/Kenne/issues/antlr-4345-again/antlr4/tool/target/antlr4-4.13.1-SNAPSHOT-complete.jar
++ whereisit='C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar'
++ echo 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar'
+C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar
++ cd ..
++ rm -rf stg-python3
++ git clone https://github.com/kaby76/stg-python3
+Cloning into 'stg-python3'...
++ cd stg-python3
++ java --version
+openjdk 11.0.1 2018-10-16
+OpenJDK Runtime Environment 18.9 (build 11.0.1+13)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.1+13, mixed mode)
++ trgen --version
+trgen 0.21.2
+
++ trgen -t Java
+C:\msys64\home\Kenne\issues\antlr-4345-again\stg-python3
+CSharp  Python3Parser.g4 success 0.0595262
+CSharp  Python3Lexer.g4 success 0.0140516
+Rendering template file from Java/st.build.ps1 to Generated-Java-0/st.build.ps1
+Rendering template file from Java/st.build.sh to Generated-Java-0/st.build.sh
+Rendering template file from Java/st.clean.ps1 to Generated-Java-0/st.clean.ps1
+Rendering template file from Java/st.clean.sh to Generated-Java-0/st.clean.sh
+Rendering template file from Java/st.ErrorListener.java to Generated-Java-0/st.ErrorListener.java
+Rendering template file from Java/st.makefile to Generated-Java-0/st.makefile
+Rendering template file from Java/st.MyDiagnosticErrorListener.java to Generated-Java-0/st.MyDiagnosticErrorListener.java
+Rendering template file from Java/st.perf.sh to Generated-Java-0/st.perf.sh
+Rendering template file from Java/st.run.ps1 to Generated-Java-0/st.run.ps1
+Rendering template file from Java/st.run.sh to Generated-Java-0/st.run.sh
+Rendering template file from Java/st.Test.java to Generated-Java-0/st.Test.java
+Rendering template file from Java/st.test.ps1 to Generated-Java-0/st.test.ps1
+Rendering template file from Java/st.test.sh to Generated-Java-0/st.test.sh
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/test-parser.sh to Generated-Java-0/test-parser.sh
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/README.md to Generated-Java-0/README.md
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Python3Parser.g4 to Generated-Java-0/Python3Parser.g4
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Python3Lexer.g4 to Generated-Java-0/Python3Lexer.g4
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/pom.xml to Generated-Java-0/pom.xml
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/desc.xml to Generated-Java-0/desc.xml
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/match2.py to Generated-Java-0/small/match2.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/match.py to Generated-Java-0/small/match.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/constants.py to Generated-Java-0/small/constants.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/small/base_futures.py to Generated-Java-0/small/base_futures.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/__init__.py to Generated-Java-0/large/__init__.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/windows_utils.py to Generated-Java-0/large/windows_utils.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/windows_events.py to Generated-Java-0/large/windows_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/unix_events.py to Generated-Java-0/large/unix_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/unicode_identifier.py to Generated-Java-0/large/unicode_identifier.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/transports.py to Generated-Java-0/large/transports.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/test_utils.py to Generated-Java-0/large/test_utils.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/tasks.py to Generated-Java-0/large/tasks.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/subprocess.py to Generated-Java-0/large/subprocess.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/streams.py to Generated-Java-0/large/streams.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/sslproto.py to Generated-Java-0/large/sslproto.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/selector_events.py to Generated-Java-0/large/selector_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/queues.py to Generated-Java-0/large/queues.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/protocols.py to Generated-Java-0/large/protocols.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/proactor_events.py to Generated-Java-0/large/proactor_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/match2.py to Generated-Java-0/large/match2.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/match.py to Generated-Java-0/large/match.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/log.py to Generated-Java-0/large/log.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/locks.py to Generated-Java-0/large/locks.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/futures.py to Generated-Java-0/large/futures.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/events.py to Generated-Java-0/large/events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/coroutines.py to Generated-Java-0/large/coroutines.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/constants.py to Generated-Java-0/large/constants.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/compat.py to Generated-Java-0/large/compat.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_tasks.py to Generated-Java-0/large/base_tasks.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_subprocess.py to Generated-Java-0/large/base_subprocess.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_futures.py to Generated-Java-0/large/base_futures.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/large/base_events.py to Generated-Java-0/large/base_events.py
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Java/Python3Parser.stg to Generated-Java-0/Python3Parser.stg
+Copying source file from C:/msys64/home/Kenne/issues/antlr-4345-again/stg-python3/Java/Python3Lexer.stg to Generated-Java-0/Python3Lexer.stg
++ cd Generated-Java-0
++ JAR='C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar'
++ CLASSPATH='C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar\;.'
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java Python3Lexer.g4
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java Python3Parser.g4
++ javac -cp 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar\;.' ErrorListener.java MyDiagnosticErrorListener.java Python3Lexer.java Python3Parser.java Python3ParserBaseListener.java Python3ParserListener.java Test.java
++ java -cp 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar\;.' Test small/constants.py
+Java 0 small/constants.py success 0.044
+Total Time: 1.056
++ cd ..
++ rm -rf Generated-Java-0
++ ls .
+Cpp
+CSharp
+Dart
+desc.xml
+Go
+Java
+JavaScript
+large
+pom.xml
+Python3
+Python3Lexer.g4
+Python3Parser.g4
+README.md
+small
+test-parser.sh
+TypeScript
++ ls Java
+Python3Lexer.stg
+Python3Parser.stg
++ set +e
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java -lib Java Python3Lexer.g4
++ java -jar 'C:\msys64\home\Kenne\issues\antlr-4345-again\antlr4\tool\target\antlr4-4.13.1-SNAPSHOT-complete.jar' -encoding utf-8 -Dlanguage=Java -lib Java Python3Parser.g4
++ set -e

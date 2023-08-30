@@ -1,0 +1,11 @@
+--- a/tool/src/org/antlr/v4/tool/GrammarTransformPipeline.java
++++ b/tool/src/org/antlr/v4/tool/GrammarTransformPipeline.java
+@@ -769,6 +769,8 @@ public class GrammarTransformPipeline {
+			return null;
+		}
+
++		actionTemplatesFile = actionTemplatesGroupFile.getAbsolutePath();
++
+		try {
+			STGroupFile actionTemplates = new STGroupFile(actionTemplatesFile);
+			STErrorListener errorListener = createActionTemplateErrorListener(root, actionTemplates);
